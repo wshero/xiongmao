@@ -431,6 +431,7 @@ body.on-menu header .mbtn{
 	position: absolute;
 	right: 0;
 	top: 0;
+	z-index: 9;
 }
 .poolDiv .row>div .imgDiv span{
 	display: block;
@@ -666,7 +667,8 @@ body.on-menu:after {
 		margin-bottom: 30px;
 	}
 	.bottom_logo img:last-child{
-		margin: 0px!important;
+		/* margin: 0px!important; */
+		/* margin-right: 30px; */
 	}
 	header .logos{
 		width: 90px;

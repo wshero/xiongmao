@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>熊猫资本</title>
+
+    <!--font-family-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<style>
+
+    .index{
+        width: 100%;
+    }
+    .index_top{
+        width: 100%;
+        position: relative;
+    }
+    .lllo{
+        width: 157px;
+        height: 52px;
+        position: absolute;
+        left: 6%;
+        top: 7%;
+    }
+    .index_two{
+        width: 100%;
+    }
+    .index_two_top{
+        width: 100%;
+    }
+    .index_two_top_left{
+        width: 80%;
+        padding-left: 10%;
+        padding-top: 8%;
+    }
+    .index_two_top_right{
+        width: 133px;
+        height: 321px;
+        background: #92ABC8;
+        opacity: 0.17;
+    }
+    .brief{
+        margin-left: 25%;
+        padding-left: 40px;
+        border-left: 3px solid rgb(150, 150, 150);
+    }
+    .index_two_bottom{
+        width: 100%;
+        margin-top: 150px;
+        position: relative;
+    }
+    .index_three .brief{
+        border-right: 3px solid rgb(150, 150, 150);
+        border-left:none;
+        padding-right: 40px;
+        margin-right: 40px;
+
+    }
+    .index_three_bot{
+        display: table;
+
+    }
+    .index_three_bot .inner{
+        display: table-cell;
+    }
+    .index_two_bottom_right{
+        width: 60%;
+        padding: 8% 9%;
+        background-color: rgb(242, 242, 242);
+    }
+    .index_title_top{
+        font-size: 22px;
+        font-family: Arial-BoldMT;
+        color: #1C1F21;
+        font-weight: bold;
+        line-height: 38px;
+    }
+    .index_title_bottom{
+        font-size: 22px;
+        font-family: Arial-BoldMT;
+        color: #A9A9AA;
+        margin-top: 35px;
+        line-height: 38px;
+    }
+    .index_two_bottom_left{
+        width: 50%;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    .index_forder{
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .index_forder_middle{
+        width: 62%;
+        margin: 0 auto;
+        display: block;
+        padding-top: 8%;
+        padding-bottom: 50px;
+    }
+    .index_bottoms{
+        width: 100%;
+        height: 60px;
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .index_bottoms img:first-child{
+        height: 60px;
+    }
+    .index_bottoms img:nth-child(2){
+        margin-left: 7%;
+        height: 60px;
+    }
+    .index_bottoms img:nth-child(3){
+        margin-left: 4%;
+        height: 16px;
+    }
+    .nnth{
+        margin-left: 28px;
+    }
+    .index_three_bot{
+        padding-left: 19%;
+    }
+    .index_three-lt {
+        font-family: Arial;
+        color: #1C1F21;
+        line-height: 40px;
+        width: 42%;
+    }
+    .index_three{
+        margin-bottom: 20px;
+    }
+    .index_three .tit{
+        font-size: 56px;
+        font-family: '宋体';
+        margin: 20px auto 240px;
+        font-weight: bolder;
+        width: 500px;
+        text-align: center;
+        height: 134px;
+        line-height: 134px;
+        border-right: 6px solid #ddd;
+        position: relative;
+    }
+    .index_three .tit .squ{
+        width: 133px;
+        height: 321px;
+        background: #92ABC8;
+        opacity: 0.17;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .index_three .index_two_top_left {
+        width: 80%;
+        padding-right: 10%;
+        padding-top: 8%;
+        padding-left: 0;
+    }
+    .index_two_top_right {
+        width: 133px;
+        height: 321px;
+        background: #92ABC8;
+        opacity: 0.17;
+    }
+    .index_three-lt h2{
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .index_three-lt p{
+        font-size: 18px;
+        line-height: 1.3;
+        color: #A9A9AA;
+    }
+    .index_three-rt img{
+        width: 100%;
+    }
+    .index_three-rt{
+        width: 54%;
+        vertical-align: middle;
+    }
+    .after:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    /* 第五栏目 */
+    .index_fire{
+        background-color: rgb(242, 242, 242);
+        padding-top: 130px;
+    }
+    .index_fire_zong{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    .index_fire_zong_left{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        margin-left: 8%;
+        align-items: center;
+        padding-left: 36px;
+        border-left: 2px solid #333333;
+    }
+    .index_fire_zong_left img{
+        width: 25%;
+    }
+    .index_fire_zong_right{
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 160px;
+    }
+    .index_fire_zong_right_list{
+        width: 23%;
+        margin-right: 2%;
+        margin-top: 30px;
+    }
+    
+
+    .youqing_block{
+        padding: 0 15px 0;
+    }
+    .youqing_block a{
+        color:#333333;
+        font-size: 16px;
+
+    }
+    
+    @media screen and (max-width: 1280px) {
+        .index_three_bot{
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .index_fire_zong_right_list:nth-child(4n){
+        margin-right: 0px;
+    }
+        .index_three-rt{
+            width: 100%;
+            margin: 20px 0 20px;
+        }
+        .index_three-lt,.index_three-rt{
+            width: 100%;
+        }
+        .index_two_bottom_left{
+            width: 100%;
+            position: static;
+        }
+        .index_two_bottom_right{
+            width: 100%;
+            margin-top: 60px;;
+        }
+        .index_title_top{
+            font-size: 30px;
+        }
+        .index_title_bottom{
+            font-size: 16px;;
+        }
+        .index_two_top_right{
+            width: 12%;
+            height: 160px;;
+        }
+        .brief{
+            width: 70%;
+            margin-left: 0;
+            float: right;
+            margin-top: 20px;;
+        }
+        .index_two_bottom{
+            margin-top: 10px;;
+        }
+        .v-img{
+            
+        }
+    }
+    @media screen and (max-width: 440px) {
+        .index_title_bottom{
+            line-height: 1.3;
+        }
+        .index_three-lt p{
+            font-size: 16px;line-height: 1.3;
+        }
+        .index_title_top{
+            font-size: 18px;line-height: 1.3;
+        }
+        .inner{
+            padding: 0 20px;
+
+        }
+        .index_title_bottom {
+            margin-top: 24px;
+        }
+        .index_three .brief{
+            padding: 12px;
+        }
+        .index_three_bot{
+            width: 100%;
+        }
+        .index_three-lt h2{
+            font-size: 20px;
+        }
+        .index_fire_zong_right_list{
+            width: 31%;
+            margin-right: 2.3%;
+            margin-top: 30px;
+        }
+        .index_fire_zong_right_list:nth-child(3n){
+            margin-right:0;
+        }
+        .index_fire_zong_right_list:nth-child(4n){
+            margin-right: 2.6%;
+        }
+    }
+
+</style>
+<body class="has-animations">
+   <div class="index">
+        <!-- 第一栏目 -->
+        <div class="index_top">
+            <!-- 切图待修改 -->
+            <img src="./img/-banner.png" alt="">
+            <img class="lllo" src="./img/logos.png" alt="">
+        </div>
+        <!-- 第二栏目 -->
+        <div class="index_two">
+            <div class="index_two_top am-cf">
+                <div class="index_two_top_left am-fl am-cf">
+                    <img class="am-fl v-img" src="./img/left_1.png">
+                    <div class="brief am-fl">
+                        <img src="./img/capital.png">
+                    </div>
+                </div>
+                <div class="index_two_top_right am-fr"></div>
+            </div>
+            <div class="index_two_bottom am-cf">
+                <div class="inner index_two_bottom_left am-fl">
+                    <img src="./img/bottom2.png">
+                </div>
+                <div class="inner index_two_bottom_right am-fr">
+                    <p class="index_title_top">Panda Capital was founded by the leadership of the Blockchain Research Center of Industry Development Research Institute of</p>
+                    <p class="index_title_bottom overflow4">the Chinese Management Sciences Academy, focusing on the project investment in the blockchain field, and aiming to dig high-quality </p>
+                </div>
+            </div>
+        </div>
+        <!-- 第三栏目 -->
+        <!-- <div class="index_three">
+            <img src="./img/jieshao.png" alt="">
+        </div> -->
+        <div class="index_three">
+            <div class="index_two_top am-cf">
+                <div class="index_two_top_left am-fr am-cf">
+                    <img class="am-fr v-img" src="./img/left_1.png">
+                    <div class="brief am-fl">
+                        <img src="./img/tit_advantages.png">
+                    </div>
+                </div>
+                <div class="index_two_top_right am-fl"></div>
+            </div>
+            <!-- <div class="index_two_top am-cf">
+                <div class="index_two_top_right am-fr am-cf">
+                    <img class="am-fr v-img" src="./img/left_1.png">
+                    <div class="brief am-fr">
+                        <img src="./img/capital.png">
+                    </div>
+                </div>
+                <div class="index_two_top_right am-fr"></div>
+            </div> -->
+            <div class="after index_three_bot">
+                <div class="inner index_three-lt am-fl">
+                    <ul>
+                        <li>
+                            <h2>Experience</h2>
+                            <p>With 4 years of experience as blockchain entrepreneurs, we’ve contacted 200+ projects, invested in
+                            20+ projects, and are in close contact with the 100 most influential people in the space.</p>
+                        </li>
+                        <li>
+                            <h2>Ecosystem</h2>
+                            <p>We have vertical integration from incubator to exchange; horizontally our holdings range from infrastructural
+                            projects to applications, analysis and market development.</p>
+                        </li>
+                        <li>
+                            <h2>Research</h2>
+                            <p>Our in house team of 10+ analysts has evaluated over 80 projects, and is augmented by a team of 10+ global partners
+                            who extend our reach to every corner of the global blockchain space.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner index_three-rt am-fr after">
+                    <img src="./img/banner-rt.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <!-- 第四栏目 -->
+        <div class="index_fore">
+            <img src="./img/fores.png" alt="">
+        </div>
+        <!-- 第五栏目 -->
+        <!-- 第五栏目 -->
+        <div class="index_fire">
+            <!-- <img src="./img/three.png" alt=""> -->
+            <div class="index_fire_zong">
+                <div class="index_fire_zong_left">
+                    <img src="./img/Portfolio.png" alt="">
+                </div>
+                <div class="index_fire_zong_right am-cf">
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://ethereum.org/en/eth2/" target="_blank">
+                            <img src="./img/1121.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://polkadot.network/" target="_blank">
+                            <img src="./img/1122.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://cosmos.network/" target="_blank">
+                            <img src="./img/1123.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://wanchain.org/" target="_blank">
+                            <img src="./img/1124.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://chain.link/" target="_blank">
+                            <img src="./img/1125.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://harmony.one/" target="_blank">
+                            <img src="./img/1126.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部内容 -->
+        <!-- 底部内容 -->
+        <div class="index_forder">
+            <div class="index_forder_middle">
+                <!-- 友情链接 -->
+                <div class="youqing_s am-cf">
+                    <div class="youqing_block am-fl">
+                        <a href="https://www.block360.pro/">
+                            布洛克财经
+                        </a>
+                    </div>
+                    <div class="youqing_block am-fl">
+                        <a href="https://www.jinse.com/">
+                           金色财经
+                        </a>
+                    </div>
+                    <div class="youqing_block am-fl">
+                        <a href="https://www.bishijie.com/">
+                            币世界
+                        </a>
+                    </div>
+                    <div class="youqing_block am-fl">
+                        <a href="https://www.chainnews.com/">
+                            链闻
+                        </a>
+                    </div>
+                    <div class="youqing_block am-fl">
+                        <a href="https://www.blockglobal.pro/">
+                            布洛克资本
+                        </a>
+                    </div>
+                    <div class="youqing_block am-fl">
+                        <a href="##">
+                            领众资本
+                        </a>
+                    </div>
+                </div>
+                <div class="index_bottoms">
+                    <!-- <div class="index_bottoms_left"> -->
+                        <img src="./img/logo.png" alt="">
+                        <img src="./img/4c64d8050bc6996864bdea1bf618ab8.png" alt="">
+                        <img src="./img/nth.png" alt="">
+                    <!-- </div> -->
+                    <!-- <div class="index_bottoms_right">
+                        <a href=""><img class="nnth" src="./img/1141.png" alt=""></a>
+                        <a href=""><img class="nnth" src="./img/1142.png" alt=""></a>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>   
+
+</body>
+<script src="./js/jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/scrollreveal.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/main.min.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

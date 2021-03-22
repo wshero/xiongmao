@@ -106,18 +106,12 @@
         width: 62%;
         margin: 0 auto;
         display: block;
-        padding-top: 8%;
+        padding-top: 4%;
         padding-bottom: 50px;
     }
-    .index_bottoms{
-        width: 100%;
-        height: 60px;
-        margin-top: 10%;
-        display: flex;
-        align-items: center;
-    }
+    
     .index_bottoms img:first-child{
-        height: 60px;
+        height: 45px;
     }
     .index_bottoms img:nth-child(2){
         margin-left: 7%;
@@ -222,7 +216,7 @@
     }
     .index_fire_zong_right{
         width: 100%;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         padding-bottom: 160px;
     }
     .index_fire_zong_right_list{
@@ -233,20 +227,33 @@
     
 
     .youqing_block{
-        padding: 0 15px 0;
+        width: 120px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        margin: 0 16px;
     }
     .youqing_block a{
         color:#333333;
         font-size: 16px;
 
     }
-    
+    .index_bottoms{
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+    }
+    .index_bottoms_right{
+        float: right;
+    }
     @media screen and (max-width: 1280px) {
         .index_three_bot{
             width: 80%;
             margin: 0 auto;
             padding: 0;
         }
+      
         .index_fire_zong_right_list:nth-child(4n){
         margin-right: 0px;
     }
@@ -288,10 +295,20 @@
             
         }
     }
+    .index_bottoms_left{
+        width: 100%;
+    }
     @media screen and (max-width: 440px) {
         .index_title_bottom{
             line-height: 1.3;
         }
+        .index_bottoms_left{
+            width: 100%;
+            text-align: center;
+        }
+        .index_bottoms_left img{
+            vertical-align: middle;
+        }   
         .index_three-lt p{
             font-size: 16px;line-height: 1.3;
         }
@@ -299,7 +316,7 @@
             font-size: 18px;line-height: 1.3;
         }
         .inner{
-            padding: 0 20px;
+            padding: 15px 20px;
 
         }
         .index_title_bottom {
@@ -325,8 +342,49 @@
         .index_fire_zong_right_list:nth-child(4n){
             margin-right: 2.6%;
         }
+        /* portfolio */
+        .index_fire{
+            padding-top: 30px;
+        }
+        .index_fire_zong_left{
+            height: 40px;
+        }
+        .index_fire_zong_right{
+            padding-bottom: 30px;
+        }
+        .index_forder_middle{
+            width: 80%;
+        }
+        .youqing_block{
+            margin: 0 15px;
+        }
+        .index_bottoms{
+            margin-top: 16%;
+            display: block;
+        }
+        .index_bottoms_left{
+            width: 100%;
+        }
+        .index_bottoms_right{
+            width: 100%;
+        }
+        .index_bottoms img:nth-child(3){
+            margin-left: 0px;
+            height: 13px;
+            margin-top: 10%;
+        }
+        .nnth{
+            display: none;
+        }
     }
-
+    .nsth{
+        margin-left: 26%;
+    }
+    .index_fire_zong_right_list img{
+        width: 289px;
+        /* height: 181px; */
+    }
+   
 </style>
 <body class="has-animations">
    <div class="index">
@@ -449,6 +507,42 @@
                             <img src="./img/1126.png" alt="">
                         </a>
                     </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://kusama.network" target="_blank">
+                            <img src="./img/20210311115028.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://www.irisnet.org" target="_blank">
+                            <img src="./img/33333333333333333332.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://globedx.com/" target="_blank">
+                            <img src="./img/5f58078cc69f7d489b7d8eafa0ab3cc.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://www.superfarm.com/" target="_blank">
+                            <img src="./img/51b386366810dab816b5b820e3e6a9f.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://nodle.io/" target="_blank">
+                            <img src="./img/64d236ff8a0e9884f835d2b67de7a3a.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://kusama.network/" target="_blank">
+                            <img src="./img/2b3f8894586ce1131ce7feb37583c76.png" alt="">
+                        </a>
+                    </div>
+                    <div class="index_fire_zong_right_list am-fl">
+                        <a href="https://www.lemond.money/" target="_blank">
+                            <img src="./img/456f6af49f6cf671038ea819268fe98.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -460,44 +554,48 @@
                 <!-- 友情链接 -->
                 <div class="youqing_s am-cf">
                     <div class="youqing_block am-fl">
-                        <a href="https://www.block360.pro/">
-                            布洛克财经
-                        </a>
-                    </div>
-                    <div class="youqing_block am-fl">
                         <a href="https://www.jinse.com/">
-                           金色财经
+                            <!-- 金色财经 -->
+                            <img src="./img/09b5c8f.svg" alt="">
                         </a>
                     </div>
                     <div class="youqing_block am-fl">
-                        <a href="https://www.bishijie.com/">
-                            币世界
+                        <a href="https://www.block360.pro/">
+                            <!-- 布洛克财经 -->
+                            <img src="./img/8651958.png" alt="">
                         </a>
                     </div>
+                    <!-- <div class="youqing_block am-fl">
+                        <a href="https://www.bishijie.com/">
+                            <img src="./img/u=3184870154,2151675985&fm=26&gp=0.jpg" alt="">
+                        </a>
+                    </div> -->
                     <div class="youqing_block am-fl">
                         <a href="https://www.chainnews.com/">
-                            链闻
+                            <!-- 链闻 -->
+                            <img src="./img/chainnews-logo-black.png" alt="">
                         </a>
                     </div>
-                    <div class="youqing_block am-fl">
-                        <a href="https://www.blockglobal.pro/">
-                            布洛克资本
+                    <!-- <div class="youqing_block am-fl">
+                        <a href="https://www.blockglobal.pro/"> -->
+                            <!-- 布洛克资本 -->
+                            <!-- <img src="" alt="">
                         </a>
-                    </div>
-                    <div class="youqing_block am-fl">
+                    </div> -->
+                    <!-- <div class="youqing_block am-fl">
                         <a href="##">
-                            领众资本
+                            <img src="./img/v2-09ccc98dbd37f6cbbb92dd8641aa2ad2_r.jpg" alt="">
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="index_bottoms">
-                    <!-- <div class="index_bottoms_left"> -->
+                    <div class="index_bottoms_left">
                         <img src="./img/logo.png" alt="">
                         <img src="./img/4c64d8050bc6996864bdea1bf618ab8.png" alt="">
                         <img src="./img/nth.png" alt="">
-                    <!-- </div> -->
+                    </div>
                     <!-- <div class="index_bottoms_right">
-                        <a href=""><img class="nnth" src="./img/1141.png" alt=""></a>
+                       <a href=""><img class="nnth nsth" src="./img/1141.png" alt=""></a>
                         <a href=""><img class="nnth" src="./img/1142.png" alt=""></a>
                     </div> -->
                     
